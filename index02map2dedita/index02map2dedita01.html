@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="keywords" content="VisualBasic　2Dマップエディタ">
+    <meta name="description" content="VisualBasicで作成した自作2Dマップエディタの紹介">
+    
+    <title>ArrowBlog VisualBasicでマップエディタを作成</title>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-8736166420196045",
+        enable_page_level_ads: true
+    });
+    </script>
+
+    <link rel="shortcut icon" href="../resource/ArrowIcon.ico" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+        <div id="header">
+
+                <div class="logo"><img src="../resource/heder2.png" alt=ロゴ width="300" height="80"></div>
+    
+         </div>
+    
+         <div id="menu">
+            <ul>
+                    <li><a href="../index.html">ホーム</li></a>
+    
+            </ul>
+        </div>
+            
+        <div id="container">
+ 
+            <div id="content">
+ 
+                   
+                <h1>VB.netでマップエディタを作成</h1>
+                <div class="mainimg">
+                        <video width="560" height="315" src="resource/2Dmapedi.mp4" controls playsinline></video></video>
+                </div>
+                <p>使用言語：VisualBasic.net<br>人数：1人<br>期間：3ヵ月程度<br>開発環境：windows,VisualStudio</p>
+                <p><a href="resource/mapeditorexe.zip" download="mapeditorexe.zip">ダウンロード</a></p>
+                <p><a href="https://github.com/SeiyaYamaoka/YS2Dmapeditor">ソースコード</a></p>
+
+
+                <p>下図のように簡単にマップ用のデータを作成することができます。</p>
+                <div class="mainimg"><img   src="resource/画像12.png" alt=ゲーム画面 width="640" height="375"> </div>
+
+                <br><br>
+
+                <h2>-操作説明-</h2>
+                <div class="mainimg"><img src="resource/画像2.png" alt=ゲーム画面 width="640" height="375"></div>
+                <p>setting/InitConfiguration.txt：初期設定用の  ファイル</p>
+                                
+                <table style="margin: auto;">
+                    <tr><td>COL_NUM=80</td><td>横ブロック数</td></tr>
+                    <tr><td>ROW_NUM=60</td><td>縦ブロック数</td></tr>
+                    <tr><td>BLO_SIZE=10</td><td>ブロックのサイズ</td></tr>
+                    <tr><td>backbmpfilename=siro.png</td><td>背景画像</td></tr>
+                    <tr><td>MapChipSetFile=setting\ChipConfigurationT.txt</td><td>マップチップの設定ファイル</td></tr>
+                    <tr><td>TestPlayfile=play\TransferZombie1.exe</td><td>テストゲーム用実行ファイル</td></tr>
+                    <tr><td>Mapdatafile=sample1.txt</td><td>初期読み込みマップファイル</td></tr>
+                </table>
+                <p>①：マップチップです。クリックして④のマップに絵を描く要領でマップを作成できます。</p>
+                <p>②：現在選ばれているマップチップを表示します。ボタンはマップチップの設定ファイルを表示します。</p>
+                <table style="margin: auto;">
+                    <tr><td>type=0</td><td>書き込む数字</td></tr>
+                    <tr><td>file=tankmapthip1.png</td><td>ファイル内の画像</td></tr>
+                    <tr><td>rect=0,0,64,64</td><td>マップチップ内のサイズ</td></tr>
+                </table>
+                <p>③：作成するマップを設定できます。</p>
+                <table style="margin: auto;">
+                    <tr><td>W,H</td><td>マップの場所を表示</td></tr>
+                    <tr><td>cW,H</td><td>マップの大きさ</td></tr>
+                    <tr><td>Size</td><td>マップチップ一個の大きさ</td></tr>
+                    <tr><td>MapD</td><td>マップデータを読み(read)書き(save)全削除(clear)。</td></tr>
+                    <tr><td>BImg</td><td>ファイルのアイコンで背景画像を読み込みsaveで作成したマップを画像として保存できます。</td></tr>
+                    <tr><td></td><td>背景のメモリ線を表示できます。</td></tr>
+                    <tr><td></td><td>選択範囲を指定できます。</td></tr>
+                    <tr><td>TEST</td><td>テストプレイできます。</td></tr>
+                </table>
+                <p>④：作成するマップです。これにマウスで操作してマップを作成します。</p>
+                <p>⑤：範囲選択モードの時の塗りつぶし、置換、枠だけ塗りつぶすなどの操作ができます。</p>
+            </div>
+        </div>
+
+   
+  
+
+        <div id="footer"></div>
+
+   
+</body>
+
+</html>
